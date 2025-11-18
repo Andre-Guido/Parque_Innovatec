@@ -28,13 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administraciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jerarquíaAdministrativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rutasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inicioToolStripMenuItem,
+            this.administraciónToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(462, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // inicioToolStripMenuItem
+            // 
+            this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItem});
+            this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
+            this.inicioToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.inicioToolStripMenuItem.Text = "Archivo";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // administraciónToolStripMenuItem
+            // 
+            this.administraciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.jerarquíaAdministrativaToolStripMenuItem,
+            this.rutasToolStripMenuItem});
+            this.administraciónToolStripMenuItem.Name = "administraciónToolStripMenuItem";
+            this.administraciónToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
+            this.administraciónToolStripMenuItem.Text = "Administración";
+            // 
+            // jerarquíaAdministrativaToolStripMenuItem
+            // 
+            this.jerarquíaAdministrativaToolStripMenuItem.Name = "jerarquíaAdministrativaToolStripMenuItem";
+            this.jerarquíaAdministrativaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.jerarquíaAdministrativaToolStripMenuItem.Text = "Jerarquía Administrativa";
+            this.jerarquíaAdministrativaToolStripMenuItem.Click += new System.EventHandler(this.jerarquíaAdministrativaToolStripMenuItem_Click);
+            // 
+            // rutasToolStripMenuItem
+            // 
+            this.rutasToolStripMenuItem.Name = "rutasToolStripMenuItem";
+            this.rutasToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.rutasToolStripMenuItem.Text = "Rutas";
+            this.rutasToolStripMenuItem.Click += new System.EventHandler(this.rutasToolStripMenuItem_Click);
+            // 
+            // FrmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(462, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "FrmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmPrincipal";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administraciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jerarquíaAdministrativaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rutasToolStripMenuItem;
     }
 }
 
